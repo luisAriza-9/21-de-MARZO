@@ -13,28 +13,23 @@
             height: 100vh;
             margin: 0;
             font-family: Arial, sans-serif;
-            color: yellow;
         }
         .flor {
             position: relative;
-            width: 100px;
-            height: 100px;
-            transition: transform 0.3s ease-in-out;
-        }
-        .flor:hover {
-            transform: scale(1.1); /* Amplía la flor al pasar el mouse */
+            width: 150px;
+            height: 150px;
         }
         .petalo {
             position: absolute;
-            width: 60px;
-            height: 20px;
+            width: 80px;
+            height: 40px;
             background: linear-gradient(to bottom, #fff, #ff0);
             border-radius: 50%;
-            transform-origin: bottom center;
+            transform-origin: 50% 100%;
             transition: transform 0.3s ease-in-out;
         }
         .flor:hover .petalo {
-            transform: translateY(-10px); /* Mueve ligeramente los pétalos hacia arriba */
+            transform: scale(1.2); /* Amplía los pétalos */
         }
         .petalo:nth-child(1) { transform: rotate(0deg); }
         .petalo:nth-child(2) { transform: rotate(30deg); }
@@ -50,8 +45,8 @@
         .petalo:nth-child(12) { transform: rotate(330deg); }
         .centro {
             position: absolute;
-            top: 40px;
-            left: 20px;
+            top: 45px;
+            left: 45px;
             width: 60px;
             height: 60px;
             background-color: #ff0;
@@ -59,17 +54,11 @@
         }
         .tallo {
             position: absolute;
-            top: 100px;
-            left: 45px;
+            top: 150px;
+            left: 70px;
             width: 10px;
-            height: 100px;
+            height: 120px;
             background-color: green;
-        }
-        .texto {
-            position: absolute;
-            top: 220px;
-            text-align: center;
-            width: 100%;
         }
     </style>
 </head>
@@ -89,10 +78,6 @@
         <div class="petalo"></div>
         <div class="centro"></div>
         <div class="tallo"></div>
-    </div>
-    <div class="texto">
-        <p>YIYI TQM</p>
-        <p>:)</p>
     </div>
 </body>
 </html>
