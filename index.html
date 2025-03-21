@@ -6,12 +6,13 @@
     <title>Flor Animada</title>
     <style>
         body {
-            background-color: #000;
+            background-color: #f0f8ff;
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh;
             margin: 0;
+            font-family: Arial, sans-serif;
         }
         .flor {
             position: relative;
@@ -20,6 +21,11 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            transform-origin: center;
+            transition: transform 0.3s ease-in-out;
+        }
+        .flor:hover {
+            transform: scale(1.1) rotate(10deg);
         }
         .petalo {
             position: absolute;
@@ -31,7 +37,7 @@
             transition: transform 0.3s ease-in-out;
         }
         .flor:hover .petalo {
-            transform: scale(1.2); /* Amplía los pétalos */
+            transform: scale(1.2) rotate(20deg);
         }
         .petalo:nth-child(1) { transform: rotate(0deg); }
         .petalo:nth-child(2) { transform: rotate(30deg); }
@@ -60,6 +66,10 @@
             height: 150px;
             background-color: green;
             border-radius: 10px;
+            transition: height 0.3s ease-in-out;
+        }
+        .flor:hover .tallo {
+            height: 160px;
         }
     </style>
 </head>
@@ -82,4 +92,3 @@
     </div>
 </body>
 </html>
-
