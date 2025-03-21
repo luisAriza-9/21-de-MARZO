@@ -12,19 +12,21 @@
             align-items: center;
             height: 100vh;
             margin: 0;
-            font-family: Arial, sans-serif;
         }
         .flor {
             position: relative;
-            width: 150px;
-            height: 150px;
+            width: 200px;
+            height: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
         .petalo {
             position: absolute;
-            width: 80px;
-            height: 40px;
+            width: 100px;
+            height: 50px;
             background: linear-gradient(to bottom, #fff, #ff0);
-            border-radius: 50%;
+            border-radius: 50px;
             transform-origin: 50% 100%;
             transition: transform 0.3s ease-in-out;
         }
@@ -45,20 +47,19 @@
         .petalo:nth-child(12) { transform: rotate(330deg); }
         .centro {
             position: absolute;
-            top: 45px;
-            left: 45px;
-            width: 60px;
-            height: 60px;
+            width: 80px;
+            height: 80px;
             background-color: #ff0;
             border-radius: 50%;
+            z-index: 1;
         }
         .tallo {
             position: absolute;
-            top: 150px;
-            left: 70px;
-            width: 10px;
-            height: 120px;
+            top: 200px;
+            width: 20px;
+            height: 150px;
             background-color: green;
+            border-radius: 10px;
         }
     </style>
 </head>
@@ -81,3 +82,4 @@
     </div>
 </body>
 </html>
+
