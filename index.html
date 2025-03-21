@@ -1,93 +1,32 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flor Animada</title>
-    <style>
-        body {
-            background-color: #f0f8ff;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-            font-family: Arial, sans-serif;
-        }
-        .flor {
-            position: relative;
-            width: 180px;
-            height: 180px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            transform-origin: center;
-        }
-        .flor:hover {
-            transform: scale(1.1) rotate(5deg);
-        }
-        .petalo {
-            position: absolute;
-            width: 60px;
-            height: 30px;
-            background: linear-gradient(to bottom, #fff, #ff0);
-            border-radius: 50px;
-            transform-origin: 50% 100%;
-            transition: transform 0.3s ease-in-out;
-        }
-        .flor:hover .petalo {
-            transform: scale(1.3) rotate(10deg);
-        }
-        .petalo:nth-child(1) { transform: rotate(0deg) translateX(70px); }
-        .petalo:nth-child(2) { transform: rotate(30deg) translateX(70px); }
-        .petalo:nth-child(3) { transform: rotate(60deg) translateX(70px); }
-        .petalo:nth-child(4) { transform: rotate(90deg) translateX(70px); }
-        .petalo:nth-child(5) { transform: rotate(120deg) translateX(70px); }
-        .petalo:nth-child(6) { transform: rotate(150deg) translateX(70px); }
-        .petalo:nth-child(7) { transform: rotate(180deg) translateX(70px); }
-        .petalo:nth-child(8) { transform: rotate(210deg) translateX(70px); }
-        .petalo:nth-child(9) { transform: rotate(240deg) translateX(70px); }
-        .petalo:nth-child(10) { transform: rotate(270deg) translateX(70px); }
-        .petalo:nth-child(11) { transform: rotate(300deg) translateX(70px); }
-        .petalo:nth-child(12) { transform: rotate(330deg) translateX(70px); }
-        .centro {
-            position: absolute;
-            width: 60px;
-            height: 60px;
-            background-color: #ff0;
-            border-radius: 50%;
-            z-index: 1;
-        }
-        .tallo {
-            position: absolute;
-            top: 150px;
-            width: 20px;
-            height: 150px;
-            background-color: green;
-            border-radius: 10px;
-            transition: height 0.3s ease-in-out;
-        }
-        .flor:hover .tallo {
-            height: 160px;
-        }
-    </style>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/flowers.png" type="image/x-icon">
+    <title>Flowers</title>
 </head>
+
 <body>
-    <div class="flor">
-        <div class="petalo"></div>
-        <div class="petalo"></div>
-        <div class="petalo"></div>
-        <div class="petalo"></div>
-        <div class="petalo"></div>
-        <div class="petalo"></div>
-        <div class="petalo"></div>
-        <div class="petalo"></div>
-        <div class="petalo"></div>
-        <div class="petalo"></div>
-        <div class="petalo"></div>
-        <div class="petalo"></div>
-        <div class="centro"></div>
-        <div class="tallo"></div>
+    <div class="greetings">
+        <span>H</span>
+        <span>o</span>
+        <span>l</span>
+        <span>a</span>
+        <span>!</span>
     </div>
+    <div class="description">
+        <span>ESTE DETALLE ES PARA TI :)</span>
+    </div>
+    <div class="button">
+        <button class="botones">
+            <a href="flower.html" style="color: #fff;">CLICK AQUÍ</a>
+        </button>
+    </div>
+
 </body>
+
 </html>
